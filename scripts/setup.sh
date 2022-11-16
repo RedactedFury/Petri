@@ -1,10 +1,10 @@
 make all
 
-rm -rf ~/.comdex
+rm -rf ~/.sxfury
 
-mkdir ~/.comdex
+mkdir ~/.sxfury
 
-comdex init --chain-id test test
+comdex init --chain-id redshift redshift-01
 comdex keys add test --recover --keyring-backend test<<<"y
 wage thunder live sense resemble foil apple course spin horse glass mansion midnight laundry acoustic rhythm loan scale talent push green direct brick please"
 comdex add-genesis-account test 100000000000000stake --keyring-backend test

@@ -1,0 +1,25 @@
+{
+  "name": "sxfury",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Comdex : Democratizing Finance </h1>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedactedFury/sxFury.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedactedFury/sxFury/issues"
+  },
+  "homepage": "https://github.com/RedactedFury/sxFury#readme",
+  "dependencies": {
+    "node": "^19.1.0"
+  }
+}
