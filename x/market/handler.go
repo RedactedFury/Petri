@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/redactedfury/sxfury/x/market/keeper"
-	"github.com/redactedfury/sxfury/x/market/types"
+	"github.com/redactedfury/petri/x/market/keeper"
+	"github.com/redactedfury/petri/x/market/types"
 )
 
 func NewHandler(k keeper.Keeper) sdk.Handler {

@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

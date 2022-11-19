@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	"github.com/redactedfury/sxfury/x/liquidation/expected"
-	"github.com/redactedfury/sxfury/x/liquidation/types"
+	"github.com/redactedfury/petri/x/liquidation/expected"
+	"github.com/redactedfury/petri/x/liquidation/types"
 )
 
 type Keeper struct {

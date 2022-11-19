@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/redactedfury/sxfury/x/liquidity/amm"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/amm"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 func CalculateSwapFeeAmount(ctx sdk.Context, params types.GenericParams, calculatedOfferCoinAmt sdk.Int) sdk.Int {

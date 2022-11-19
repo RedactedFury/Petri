@@ -3,8 +3,8 @@ package vault
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/vault/keeper"
-	"github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/vault/keeper"
+	"github.com/redactedfury/petri/x/vault/types"
 )
 
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, state *types.GenesisState) {

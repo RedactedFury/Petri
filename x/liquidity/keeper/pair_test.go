@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	_ "github.com/stretchr/testify/suite"

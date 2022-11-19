@@ -3,9 +3,9 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	"github.com/redactedfury/petri/app/wasm/bindings"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	auctiontypes "github.com/redactedfury/petri/x/auction/types"
 )
 
 func (k Keeper) GetUUSDFromUSD(ctx sdk.Context, price sdk.Dec) sdk.Dec {

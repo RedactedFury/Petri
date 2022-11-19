@@ -4,8 +4,8 @@ package keeper
 //import (
 //	"testing"
 //
-//	"github.com/redactedfury/sxfury/x/auction/keeper"
-//	"github.com/redactedfury/sxfury/x/auction/types"
+//	"github.com/redactedfury/petri/x/auction/keeper"
+//	"github.com/redactedfury/petri/x/auction/types"
 //	"github.com/cosmos/cosmos-sdk/codec"
 //	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 //	"github.com/cosmos/cosmos-sdk/store"

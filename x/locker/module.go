@@ -17,9 +17,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/redactedfury/sxfury/x/locker/client/cli"
-	"github.com/redactedfury/sxfury/x/locker/keeper"
-	"github.com/redactedfury/sxfury/x/locker/types"
+	"github.com/redactedfury/petri/x/locker/client/cli"
+	"github.com/redactedfury/petri/x/locker/keeper"
+	"github.com/redactedfury/petri/x/locker/types"
 )
 
 var (

@@ -3,10 +3,10 @@ package tokenmint_test
 // import (
 // 	"testing"
 
-// 	keepertest "github.com/redactedfury/sxfury/testutil/keeper"
-// 	"github.com/redactedfury/sxfury/testutil/nullify"
-// 	"github.com/redactedfury/sxfury/x/tokenmint"
-// 	"github.com/redactedfury/sxfury/x/tokenmint/types"
+// 	keepertest "github.com/redactedfury/petri/testutil/keeper"
+// 	"github.com/redactedfury/petri/testutil/nullify"
+// 	"github.com/redactedfury/petri/x/tokenmint"
+// 	"github.com/redactedfury/petri/x/tokenmint/types"
 // 	"github.com/stretchr/testify/require"
 // )
 

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/petri/x/asset/types"
 )
 
 func (k Keeper) SetParams(ctx sdk.Context, params types.Params) {

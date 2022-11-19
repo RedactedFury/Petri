@@ -16,9 +16,9 @@ import (
 	"github.com/spf13/cobra"
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/redactedfury/sxfury/x/vault/client/cli"
-	"github.com/redactedfury/sxfury/x/vault/keeper"
-	"github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/vault/client/cli"
+	"github.com/redactedfury/petri/x/vault/keeper"
+	"github.com/redactedfury/petri/x/vault/types"
 )
 
 var (

@@ -4,8 +4,8 @@ package keeper_test
 //import (
 //	"testing"
 //
-//	testkeeper "github.com/redactedfury/sxfury/testutil/keeper"
-//	"github.com/redactedfury/sxfury/x/collector/types"
+//	testkeeper "github.com/redactedfury/petri/testutil/keeper"
+//	"github.com/redactedfury/petri/x/collector/types"
 //	"github.com/stretchr/testify/require"
 //)
 //

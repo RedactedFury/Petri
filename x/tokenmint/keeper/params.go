@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/tokenmint/types"
+	"github.com/redactedfury/petri/x/tokenmint/types"
 )
 
 // GetParams get all parameters as types.Params.

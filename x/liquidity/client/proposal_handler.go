@@ -3,8 +3,8 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/redactedfury/sxfury/x/liquidity/client/cli"
-	"github.com/redactedfury/sxfury/x/liquidity/client/rest"
+	"github.com/redactedfury/petri/x/liquidity/client/cli"
+	"github.com/redactedfury/petri/x/liquidity/client/rest"
 )
 
 var LiquidityProposalHandler = []govclient.ProposalHandler{

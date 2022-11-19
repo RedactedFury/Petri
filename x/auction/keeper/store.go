@@ -5,7 +5,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	protobuftypes "github.com/gogo/protobuf/types"
 
-	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	auctiontypes "github.com/redactedfury/petri/x/auction/types"
 )
 
 // Generic for all auctions.

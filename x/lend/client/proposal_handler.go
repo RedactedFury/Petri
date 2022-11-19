@@ -3,8 +3,8 @@ package client
 import (
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 
-	"github.com/redactedfury/sxfury/x/lend/client/cli"
-	"github.com/redactedfury/sxfury/x/lend/client/rest"
+	"github.com/redactedfury/petri/x/lend/client/cli"
+	"github.com/redactedfury/petri/x/lend/client/rest"
 )
 
 var (

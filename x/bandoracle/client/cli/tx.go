@@ -10,7 +10,7 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/spf13/cobra"
 
-	"github.com/redactedfury/sxfury/x/bandoracle/types"
+	"github.com/redactedfury/petri/x/bandoracle/types"
 )
 
 func NewCmdSubmitFetchPriceProposal() *cobra.Command {

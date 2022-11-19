@@ -8,8 +8,8 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 
-	"github.com/redactedfury/sxfury/x/asset/keeper"
-	"github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/petri/x/asset/keeper"
+	"github.com/redactedfury/petri/x/asset/types"
 )
 
 // NewHandler ...

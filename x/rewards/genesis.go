@@ -3,8 +3,8 @@ package rewards
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/rewards/keeper"
-	"github.com/redactedfury/sxfury/x/rewards/types"
+	"github.com/redactedfury/petri/x/rewards/keeper"
+	"github.com/redactedfury/petri/x/rewards/types"
 )
 
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, state *types.GenesisState) {

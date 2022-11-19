@@ -35,7 +35,7 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ```shell
 mkdir -p ${GOPATH}/src/github.com/petrichormoney/ && \
 cd ${GOPATH}/src/github.com/petrichormoney/ && \
-git clone https://github.com/redactedfury/sxfury.git && \
+git clone https://github.com/redactedfury/petri.git && \
 cd ${GOPATH}/src/github.com/redactedfury/petri/ && \
 make install
 ```
@@ -75,10 +75,10 @@ Licensed under the [petri license](LICENSE).
 
 [![Project Status: Active -- The project has reached a stable, usable
 state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
-[![version](https://img.shields.io/github/tag/petri-official/petri.svg)](https://github.com/redactedfury/sxfury/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/redactedfury/sxfury)](https://goreportcard.com/report/github.com/redactedfury/sxfury)
-[![API Reference](https://godoc.org/github.com/redactedfury/sxfury?status.svg)](https://godoc.org/github.com/redactedfury/sxfury)
-[![GitHub](https://img.shields.io/github/license/petri-official/petri.svg)](https://github.com/redactedfury/sxfury/blob/development/LICENSE)
-[![Lines Of Code](https://img.shields.io/tokei/lines/github/petri-official/petri?style=flat-square)](https://github.com/redactedfury/sxfury)
+[![version](https://img.shields.io/github/tag/petri-official/petri.svg)](https://github.com/redactedfury/petri/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/redactedfury/petri)](https://goreportcard.com/report/github.com/redactedfury/petri)
+[![API Reference](https://godoc.org/github.com/redactedfury/petri?status.svg)](https://godoc.org/github.com/redactedfury/petri)
+[![GitHub](https://img.shields.io/github/license/petri-official/petri.svg)](https://github.com/redactedfury/petri/blob/development/LICENSE)
+[![Lines Of Code](https://img.shields.io/tokei/lines/github/petri-official/petri?style=flat-square)](https://github.com/redactedfury/petri)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ComdexOfficial?label=Follow&style=social)](https://twitter.com/ComdexOfficial)
 [![Discord Chat](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/7vjPvWKKMT)

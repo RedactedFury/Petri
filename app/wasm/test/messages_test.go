@@ -3,8 +3,8 @@ package wasm
 import (
 	"testing"
 
-	"github.com/redactedfury/sxfury/app/wasm"
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
+	"github.com/redactedfury/petri/app/wasm"
+	"github.com/redactedfury/petri/app/wasm/bindings"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

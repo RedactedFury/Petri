@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"github.com/redactedfury/sxfury/x/collector/types"
+	"github.com/redactedfury/petri/x/collector/types"
 )
 
 // CmdQueryParams Return params for the collector store.

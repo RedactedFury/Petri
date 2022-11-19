@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/redactedfury/sxfury/x/liquidation/types"
-	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
-	vaultypes "github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/liquidation/types"
+	rewardstypes "github.com/redactedfury/petri/x/rewards/types"
+	vaultypes "github.com/redactedfury/petri/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

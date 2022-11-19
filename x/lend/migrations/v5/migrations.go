@@ -1,8 +1,8 @@
 package v5
 
 import (
-	v5types "github.com/redactedfury/sxfury/x/lend/migrations/v5/types"
-	"github.com/redactedfury/sxfury/x/lend/types"
+	v5types "github.com/redactedfury/petri/x/lend/migrations/v5/types"
+	"github.com/redactedfury/petri/x/lend/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"

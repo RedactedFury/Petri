@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"time"
 
-	"github.com/redactedfury/sxfury/x/auction"
+	"github.com/redactedfury/petri/x/auction"
 
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
-	auctionKeeper "github.com/redactedfury/sxfury/x/auction/keeper"
-	auctionTypes "github.com/redactedfury/sxfury/x/auction/types"
-	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
-	tokenmintKeeper1 "github.com/redactedfury/sxfury/x/tokenmint/keeper"
-	tokenminttypes "github.com/redactedfury/sxfury/x/tokenmint/types"
+	"github.com/redactedfury/petri/app/wasm/bindings"
+	auctionKeeper "github.com/redactedfury/petri/x/auction/keeper"
+	auctionTypes "github.com/redactedfury/petri/x/auction/types"
+	esmtypes "github.com/redactedfury/petri/x/esm/types"
+	tokenmintKeeper1 "github.com/redactedfury/petri/x/tokenmint/keeper"
+	tokenminttypes "github.com/redactedfury/petri/x/tokenmint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

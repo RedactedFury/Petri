@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	chain "github.com/redactedfury/sxfury/app"
-	"github.com/redactedfury/sxfury/x/vault/client/cli"
-	vaultKeeper "github.com/redactedfury/sxfury/x/vault/keeper"
-	"github.com/redactedfury/sxfury/x/vault/types"
+	chain "github.com/redactedfury/petri/app"
+	"github.com/redactedfury/petri/x/vault/client/cli"
+	vaultKeeper "github.com/redactedfury/petri/x/vault/keeper"
+	"github.com/redactedfury/petri/x/vault/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"

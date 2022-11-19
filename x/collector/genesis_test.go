@@ -5,9 +5,9 @@ import (
 
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	app "github.com/redactedfury/sxfury/app"
-	"github.com/redactedfury/sxfury/x/collector"
-	"github.com/redactedfury/sxfury/x/collector/types"
+	app "github.com/redactedfury/petri/app"
+	"github.com/redactedfury/petri/x/collector"
+	"github.com/redactedfury/petri/x/collector/types"
 	"github.com/stretchr/testify/require"
 )
 

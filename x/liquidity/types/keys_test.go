@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/suite"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 type keysTestSuite struct {

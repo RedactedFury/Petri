@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	"github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/stretchr/testify/suite"
 	"google.golang.org/grpc/codes"

@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/rest"
 	"github.com/gorilla/mux"
 
-	"github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/x/vault/types"
 )
 
 func queryVault(ctx client.Context) http.HandlerFunc {

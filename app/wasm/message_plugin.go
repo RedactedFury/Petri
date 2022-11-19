@@ -3,25 +3,25 @@ package wasm
 import (
 	"encoding/json"
 
-	esmkeeper "github.com/redactedfury/sxfury/x/esm/keeper"
-	vaultkeeper "github.com/redactedfury/sxfury/x/vault/keeper"
+	esmkeeper "github.com/redactedfury/petri/x/esm/keeper"
+	vaultkeeper "github.com/redactedfury/petri/x/vault/keeper"
 
-	auctionkeeper "github.com/redactedfury/sxfury/x/auction/keeper"
-	liquidationkeeper "github.com/redactedfury/sxfury/x/liquidation/keeper"
-	tokenmintkeeper "github.com/redactedfury/sxfury/x/tokenmint/keeper"
+	auctionkeeper "github.com/redactedfury/petri/x/auction/keeper"
+	liquidationkeeper "github.com/redactedfury/petri/x/liquidation/keeper"
+	tokenmintkeeper "github.com/redactedfury/petri/x/tokenmint/keeper"
 
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
-	assetkeeper "github.com/redactedfury/sxfury/x/asset/keeper"
-	collectorkeeper "github.com/redactedfury/sxfury/x/collector/keeper"
-	lockerkeeper "github.com/redactedfury/sxfury/x/locker/keeper"
-	lockertypes "github.com/redactedfury/sxfury/x/locker/types"
-	rewardskeeper "github.com/redactedfury/sxfury/x/rewards/keeper"
-	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
+	"github.com/redactedfury/petri/app/wasm/bindings"
+	assetkeeper "github.com/redactedfury/petri/x/asset/keeper"
+	collectorkeeper "github.com/redactedfury/petri/x/collector/keeper"
+	lockerkeeper "github.com/redactedfury/petri/x/locker/keeper"
+	lockertypes "github.com/redactedfury/petri/x/locker/types"
+	rewardskeeper "github.com/redactedfury/petri/x/rewards/keeper"
+	rewardstypes "github.com/redactedfury/petri/x/rewards/types"
 )
 
 func CustomMessageDecorator(lockerKeeper lockerkeeper.Keeper, rewardsKeeper rewardskeeper.Keeper,

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	auctiontypes "github.com/redactedfury/petri/x/auction/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

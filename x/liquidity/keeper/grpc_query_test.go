@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"time"
 
-	utils "github.com/redactedfury/sxfury/types"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	utils "github.com/redactedfury/petri/types"
+	"github.com/redactedfury/petri/x/liquidity/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	_ "github.com/stretchr/testify/suite"

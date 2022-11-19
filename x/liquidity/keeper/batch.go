@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 // ExecuteRequests executes all orders, deposit requests and withdraw requests.

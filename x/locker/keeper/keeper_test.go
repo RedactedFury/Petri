@@ -1,21 +1,21 @@
 package keeper_test
 
 import (
-	rewardsKeeper "github.com/redactedfury/sxfury/x/rewards/keeper"
+	rewardsKeeper "github.com/redactedfury/petri/x/rewards/keeper"
 	"testing"
 	"time"
 
-	collectorKeeper "github.com/redactedfury/sxfury/x/collector/keeper"
+	collectorKeeper "github.com/redactedfury/petri/x/collector/keeper"
 
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/redactedfury/sxfury/app"
-	assetKeeper "github.com/redactedfury/sxfury/x/asset/keeper"
-	lockerKeeper "github.com/redactedfury/sxfury/x/locker/keeper"
-	lockerTypes "github.com/redactedfury/sxfury/x/locker/types"
+	chain "github.com/redactedfury/petri/app"
+	assetKeeper "github.com/redactedfury/petri/x/asset/keeper"
+	lockerKeeper "github.com/redactedfury/petri/x/locker/keeper"
+	lockerTypes "github.com/redactedfury/petri/x/locker/types"
 )
 
 type KeeperTestSuite struct {

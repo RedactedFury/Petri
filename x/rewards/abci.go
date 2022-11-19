@@ -5,9 +5,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	utils "github.com/redactedfury/sxfury/types"
-	"github.com/redactedfury/sxfury/x/rewards/keeper"
-	"github.com/redactedfury/sxfury/x/rewards/types"
+	utils "github.com/redactedfury/petri/types"
+	"github.com/redactedfury/petri/x/rewards/keeper"
+	"github.com/redactedfury/petri/x/rewards/types"
 )
 
 func BeginBlocker(ctx sdk.Context, _ abci.RequestBeginBlock, k keeper.Keeper) {

@@ -3,7 +3,7 @@ package keeper
 import (
 	"fmt"
 
-	v5types "github.com/redactedfury/sxfury/x/asset/migrations/v5"
+	v5types "github.com/redactedfury/petri/x/asset/migrations/v5"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

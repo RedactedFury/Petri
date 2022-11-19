@@ -6,8 +6,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/redactedfury/sxfury/x/tokenmint/keeper"
-	"github.com/redactedfury/sxfury/x/tokenmint/types"
+	"github.com/redactedfury/petri/x/tokenmint/keeper"
+	"github.com/redactedfury/petri/x/tokenmint/types"
 )
 
 // NewHandler ...

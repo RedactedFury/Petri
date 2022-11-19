@@ -3,8 +3,8 @@ package keeper
 // import (
 // 	"testing"
 
-// 	"github.com/redactedfury/sxfury/x/esm/keeper"
-// 	"github.com/redactedfury/sxfury/x/esm/types"
+// 	"github.com/redactedfury/petri/x/esm/keeper"
+// 	"github.com/redactedfury/petri/x/esm/types"
 // 	"github.com/cosmos/cosmos-sdk/codec"
 // 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 // 	"github.com/cosmos/cosmos-sdk/store"

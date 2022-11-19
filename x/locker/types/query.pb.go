@@ -6,7 +6,7 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/redactedfury/sxfury/x/asset/types"
+	types "github.com/redactedfury/petri/x/asset/types"
 	_ "github.com/cosmos/cosmos-sdk/types"
 	query "github.com/cosmos/cosmos-sdk/types/query"
 	_ "github.com/gogo/protobuf/gogoproto"

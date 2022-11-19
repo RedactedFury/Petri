@@ -11,7 +11,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/redactedfury/sxfury/x/esm/types"
+	"github.com/redactedfury/petri/x/esm/types"
 )
 
 func GetTxCmd() *cobra.Command {

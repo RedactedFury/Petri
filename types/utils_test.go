@@ -9,7 +9,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/types"
+	"github.com/redactedfury/petri/types"
 )
 
 func TestGetShareValue(t *testing.T) {

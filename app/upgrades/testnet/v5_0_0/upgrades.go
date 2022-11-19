@@ -1,9 +1,9 @@
 package v5_0_0 //nolint:revive,stylecheck
 
 import (
-	lendkeeper "github.com/redactedfury/sxfury/x/lend/keeper"
-	liquidationkeeper "github.com/redactedfury/sxfury/x/liquidation/keeper"
-	vaultkeeper "github.com/redactedfury/sxfury/x/vault/keeper"
+	lendkeeper "github.com/redactedfury/petri/x/lend/keeper"
+	liquidationkeeper "github.com/redactedfury/petri/x/liquidation/keeper"
+	vaultkeeper "github.com/redactedfury/petri/x/vault/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"

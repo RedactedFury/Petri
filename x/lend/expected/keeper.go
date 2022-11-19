@@ -1,13 +1,13 @@
 package expected
 
 import (
-	"github.com/redactedfury/sxfury/x/liquidation/types"
+	"github.com/redactedfury/petri/x/liquidation/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
-	markettypes "github.com/redactedfury/sxfury/x/market/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	esmtypes "github.com/redactedfury/petri/x/esm/types"
+	markettypes "github.com/redactedfury/petri/x/market/types"
 )
 
 type BankKeeper interface {

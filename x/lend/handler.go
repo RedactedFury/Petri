@@ -9,8 +9,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/redactedfury/sxfury/x/lend/keeper"
-	"github.com/redactedfury/sxfury/x/lend/types"
+	"github.com/redactedfury/petri/x/lend/keeper"
+	"github.com/redactedfury/petri/x/lend/types"
 )
 
 // NewHandler ...

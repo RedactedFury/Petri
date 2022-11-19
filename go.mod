@@ -1,4 +1,4 @@
-module github.com/redactedfury/sxfury
+module github.com/redactedfury/petri
 
 go 1.18
 

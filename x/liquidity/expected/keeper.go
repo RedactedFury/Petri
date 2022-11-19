@@ -7,9 +7,9 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	markettypes "github.com/redactedfury/sxfury/x/market/types"
-	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	markettypes "github.com/redactedfury/petri/x/market/types"
+	rewardstypes "github.com/redactedfury/petri/x/rewards/types"
 )
 
 // AccountKeeper is the expected account keeper.

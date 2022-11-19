@@ -5,9 +5,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/redactedfury/sxfury/types"
-	"github.com/redactedfury/sxfury/x/liquidity"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	utils "github.com/redactedfury/petri/types"
+	"github.com/redactedfury/petri/x/liquidity"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 func (s *KeeperTestSuite) TestDefaultGenesis() {

@@ -17,10 +17,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/redactedfury/sxfury/x/liquidation/client/cli"
-	"github.com/redactedfury/sxfury/x/liquidation/expected"
-	"github.com/redactedfury/sxfury/x/liquidation/keeper"
-	"github.com/redactedfury/sxfury/x/liquidation/types"
+	"github.com/redactedfury/petri/x/liquidation/client/cli"
+	"github.com/redactedfury/petri/x/liquidation/expected"
+	"github.com/redactedfury/petri/x/liquidation/keeper"
+	"github.com/redactedfury/petri/x/liquidation/types"
 )
 
 var (

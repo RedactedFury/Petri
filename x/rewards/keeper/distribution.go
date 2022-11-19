@@ -6,7 +6,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/rewards/types"
+	"github.com/redactedfury/petri/x/rewards/types"
 )
 
 // GetRewardDistributionData returns the reward distribution data.

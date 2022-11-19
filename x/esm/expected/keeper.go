@@ -3,10 +3,10 @@ package expected
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	collectortypes "github.com/redactedfury/sxfury/x/collector/types"
-	markettypes "github.com/redactedfury/sxfury/x/market/types"
-	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	collectortypes "github.com/redactedfury/petri/x/collector/types"
+	markettypes "github.com/redactedfury/petri/x/market/types"
+	vaulttypes "github.com/redactedfury/petri/x/vault/types"
 )
 
 type AssetKeeper interface {

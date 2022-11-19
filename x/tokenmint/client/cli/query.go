@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 
-	"github.com/redactedfury/sxfury/x/tokenmint/types"
+	"github.com/redactedfury/petri/x/tokenmint/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module.

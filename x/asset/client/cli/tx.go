@@ -12,7 +12,7 @@ import (
 	"github.com/spf13/cobra"
 	flag "github.com/spf13/pflag"
 
-	"github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/petri/x/asset/types"
 )
 
 func NewCmdSubmitAddAssetsProposal() *cobra.Command {

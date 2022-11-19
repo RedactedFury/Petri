@@ -1,12 +1,12 @@
 package keeper_test
 
 import (
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
-	assetTypes "github.com/redactedfury/sxfury/x/asset/types"
-	liquidationTypes "github.com/redactedfury/sxfury/x/liquidation/types"
-	markettypes "github.com/redactedfury/sxfury/x/market/types"
-	vaultKeeper1 "github.com/redactedfury/sxfury/x/vault/keeper"
-	vaultTypes "github.com/redactedfury/sxfury/x/vault/types"
+	"github.com/redactedfury/petri/app/wasm/bindings"
+	assetTypes "github.com/redactedfury/petri/x/asset/types"
+	liquidationTypes "github.com/redactedfury/petri/x/liquidation/types"
+	markettypes "github.com/redactedfury/petri/x/market/types"
+	vaultKeeper1 "github.com/redactedfury/petri/x/vault/keeper"
+	vaultTypes "github.com/redactedfury/petri/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

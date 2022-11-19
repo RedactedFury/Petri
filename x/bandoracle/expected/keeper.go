@@ -6,8 +6,8 @@ import (
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 	ibcexported "github.com/cosmos/ibc-go/v3/modules/core/exported"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	marketttypes "github.com/redactedfury/sxfury/x/market/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	marketttypes "github.com/redactedfury/petri/x/market/types"
 )
 
 type MarketKeeper interface {

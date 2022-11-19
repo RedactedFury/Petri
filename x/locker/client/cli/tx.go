@@ -10,7 +10,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/locker/types"
+	"github.com/redactedfury/petri/x/locker/types"
 )
 
 func txCreateLocker() *cobra.Command {

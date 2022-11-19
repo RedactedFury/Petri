@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/redactedfury/sxfury/x/esm/expected"
+	"github.com/redactedfury/petri/x/esm/expected"
 
 	"github.com/tendermint/tendermint/libs/log"
 
@@ -12,9 +12,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	"github.com/redactedfury/sxfury/x/esm/types"
-	tokenminttypes "github.com/redactedfury/sxfury/x/tokenmint/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	"github.com/redactedfury/petri/x/esm/types"
+	tokenminttypes "github.com/redactedfury/petri/x/tokenmint/types"
 )
 
 type (

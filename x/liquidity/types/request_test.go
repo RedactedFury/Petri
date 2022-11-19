@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/crypto"
 
-	utils "github.com/redactedfury/sxfury/types"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	utils "github.com/redactedfury/petri/types"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 func TestDepositRequest_Validate(t *testing.T) {

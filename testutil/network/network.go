@@ -17,7 +17,7 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	tmdb "github.com/tendermint/tm-db"
 
-	petrichor "github.com/redactedfury/sxfury/app"
+	petrichor "github.com/redactedfury/petri/app"
 )
 
 type (

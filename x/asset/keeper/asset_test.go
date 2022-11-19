@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	"github.com/redactedfury/sxfury/app/wasm/bindings"
-	"github.com/redactedfury/sxfury/x/asset/keeper"
-	assetTypes "github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/petri/app/wasm/bindings"
+	"github.com/redactedfury/petri/x/asset/keeper"
+	assetTypes "github.com/redactedfury/petri/x/asset/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

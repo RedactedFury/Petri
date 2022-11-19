@@ -5,9 +5,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
 
-	"github.com/redactedfury/sxfury/x/asset/expected"
+	"github.com/redactedfury/petri/x/asset/expected"
 )
 
 type Keeper struct {

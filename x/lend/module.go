@@ -17,9 +17,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/redactedfury/sxfury/x/lend/client/cli"
-	"github.com/redactedfury/sxfury/x/lend/keeper"
-	"github.com/redactedfury/sxfury/x/lend/types"
+	"github.com/redactedfury/petri/x/lend/client/cli"
+	"github.com/redactedfury/petri/x/lend/keeper"
+	"github.com/redactedfury/petri/x/lend/types"
 )
 
 var (

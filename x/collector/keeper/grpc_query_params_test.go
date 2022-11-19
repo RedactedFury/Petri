@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/redactedfury/sxfury/app"
+	"github.com/redactedfury/petri/app"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/redactedfury/sxfury/x/collector/types"
+	"github.com/redactedfury/petri/x/collector/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )

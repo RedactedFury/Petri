@@ -4,8 +4,8 @@ package keeper
 //import (
 //	"testing"
 //
-//	"github.com/redactedfury/sxfury/x/tokenmint/keeper"
-//	"github.com/redactedfury/sxfury/x/tokenmint/types"
+//	"github.com/redactedfury/petri/x/tokenmint/keeper"
+//	"github.com/redactedfury/petri/x/tokenmint/types"
 //	"github.com/cosmos/cosmos-sdk/codec"
 //	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 //	"github.com/cosmos/cosmos-sdk/store"

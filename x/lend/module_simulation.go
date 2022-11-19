@@ -10,9 +10,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"github.com/redactedfury/sxfury/testutil/sample"
-	lendsimulation "github.com/redactedfury/sxfury/x/lend/simulation"
-	"github.com/redactedfury/sxfury/x/lend/types"
+	"github.com/redactedfury/petri/testutil/sample"
+	lendsimulation "github.com/redactedfury/petri/x/lend/simulation"
+	"github.com/redactedfury/petri/x/lend/types"
 )
 
 // avoid unused import issue.

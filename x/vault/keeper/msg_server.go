@@ -6,10 +6,10 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	collectortypes "github.com/redactedfury/sxfury/x/collector/types"
-	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
-	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
-	"github.com/redactedfury/sxfury/x/vault/types"
+	collectortypes "github.com/redactedfury/petri/x/collector/types"
+	esmtypes "github.com/redactedfury/petri/x/esm/types"
+	rewardstypes "github.com/redactedfury/petri/x/rewards/types"
+	"github.com/redactedfury/petri/x/vault/types"
 )
 
 var _ types.MsgServer = msgServer{}

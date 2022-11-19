@@ -17,10 +17,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/redactedfury/sxfury/x/auction/client/cli"
-	"github.com/redactedfury/sxfury/x/auction/expected"
-	"github.com/redactedfury/sxfury/x/auction/keeper"
-	"github.com/redactedfury/sxfury/x/auction/types"
+	"github.com/redactedfury/petri/x/auction/client/cli"
+	"github.com/redactedfury/petri/x/auction/expected"
+	"github.com/redactedfury/petri/x/auction/keeper"
+	"github.com/redactedfury/petri/x/auction/types"
 )
 
 var (

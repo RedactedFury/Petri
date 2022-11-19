@@ -3,8 +3,8 @@ package expected
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
-	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
+	rewardstypes "github.com/redactedfury/petri/x/rewards/types"
+	vaulttypes "github.com/redactedfury/petri/x/vault/types"
 )
 
 type RewardsKeeper interface {

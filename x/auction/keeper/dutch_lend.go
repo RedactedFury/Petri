@@ -5,13 +5,13 @@ import (
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
-	liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
+	lendtypes "github.com/redactedfury/petri/x/lend/types"
+	liquidationtypes "github.com/redactedfury/petri/x/liquidation/types"
 
-	utils "github.com/redactedfury/sxfury/types"
+	utils "github.com/redactedfury/petri/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	auctiontypes "github.com/redactedfury/petri/x/auction/types"
 )
 
 func (k Keeper) LendDutchActivator(ctx sdk.Context, lockedVault liquidationtypes.LockedVault) error {

@@ -1,19 +1,19 @@
 package expected
 
 import (
-	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
-	"github.com/redactedfury/sxfury/x/liquidity/amm"
+	lendtypes "github.com/redactedfury/petri/x/lend/types"
+	"github.com/redactedfury/petri/x/liquidity/amm"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	assettypes "github.com/redactedfury/sxfury/x/asset/types"
-	collectortypes "github.com/redactedfury/sxfury/x/collector/types"
-	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
-	liquiditytypes "github.com/redactedfury/sxfury/x/liquidity/types"
-	lockertypes "github.com/redactedfury/sxfury/x/locker/types"
-	markettypes "github.com/redactedfury/sxfury/x/market/types"
-	"github.com/redactedfury/sxfury/x/rewards/types"
-	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
+	assettypes "github.com/redactedfury/petri/x/asset/types"
+	collectortypes "github.com/redactedfury/petri/x/collector/types"
+	esmtypes "github.com/redactedfury/petri/x/esm/types"
+	liquiditytypes "github.com/redactedfury/petri/x/liquidity/types"
+	lockertypes "github.com/redactedfury/petri/x/locker/types"
+	markettypes "github.com/redactedfury/petri/x/market/types"
+	"github.com/redactedfury/petri/x/rewards/types"
+	vaulttypes "github.com/redactedfury/petri/x/vault/types"
 )
 
 // AccountKeeper defines the expected account keeper used for simulations (noalias).

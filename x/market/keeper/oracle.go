@@ -3,8 +3,8 @@ package keeper
 import (
 	"strconv"
 
-	assetTypes "github.com/redactedfury/sxfury/x/asset/types"
-	"github.com/redactedfury/sxfury/x/market/types"
+	assetTypes "github.com/redactedfury/petri/x/asset/types"
+	"github.com/redactedfury/petri/x/market/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

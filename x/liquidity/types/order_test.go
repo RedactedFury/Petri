@@ -8,8 +8,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/liquidity/amm"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/amm"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 func newUserOrder(dir amm.OrderDirection, orderId uint64, price sdk.Dec, amt sdk.Int) *types.UserOrder {

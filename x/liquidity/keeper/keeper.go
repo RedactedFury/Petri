@@ -8,8 +8,8 @@ import (
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/redactedfury/sxfury/x/liquidity/expected"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	"github.com/redactedfury/petri/x/liquidity/expected"
+	"github.com/redactedfury/petri/x/liquidity/types"
 )
 
 // Keeper of the liquidity store.

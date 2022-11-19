@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/redactedfury/sxfury/x/collector/types"
+	"github.com/redactedfury/petri/x/collector/types"
 	"github.com/stretchr/testify/require"
 )
 

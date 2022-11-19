@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/redactedfury/sxfury/x/auction/types"
+	"github.com/redactedfury/petri/x/auction/types"
 )
 
 type msgServer struct {

@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	chain "github.com/redactedfury/sxfury/app"
-	liquidityKeeper "github.com/redactedfury/sxfury/x/liquidity/keeper"
-	"github.com/redactedfury/sxfury/x/liquidity/types"
+	chain "github.com/redactedfury/petri/app"
+	liquidityKeeper "github.com/redactedfury/petri/x/liquidity/keeper"
+	"github.com/redactedfury/petri/x/liquidity/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"
