@@ -10,14 +10,14 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	utils "github.com/comdex-official/comdex/types"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/liquidity"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/keeper"
-	"github.com/comdex-official/comdex/x/liquidity/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	chain "github.com/redactedfury/sxfury/app"
+	utils "github.com/redactedfury/sxfury/types"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/sxfury/x/liquidity"
+	"github.com/redactedfury/sxfury/x/liquidity/amm"
+	"github.com/redactedfury/sxfury/x/liquidity/keeper"
+	"github.com/redactedfury/sxfury/x/liquidity/types"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
 )
 
 type ModuleTestSuite struct {

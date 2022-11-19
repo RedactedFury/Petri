@@ -4,14 +4,14 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
-	"github.com/comdex-official/comdex/x/collector/types"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	vaulttypes "github.com/comdex-official/comdex/x/vault/types"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	"github.com/redactedfury/sxfury/x/collector/types"
+	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
+	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
+	liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
+	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
 )
 
 type AccountKeeper interface {

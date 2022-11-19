@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	utils "github.com/comdex-official/comdex/types"
-	"github.com/comdex-official/comdex/x/liquidity"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	utils "github.com/redactedfury/sxfury/types"
+	"github.com/redactedfury/sxfury/x/liquidity"
+	"github.com/redactedfury/sxfury/x/liquidity/amm"
+	"github.com/redactedfury/sxfury/x/liquidity/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	_ "github.com/stretchr/testify/suite"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
+	liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -13,11 +13,11 @@ import (
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
-	"github.com/comdex-official/comdex/x/lend/expected"
-	"github.com/comdex-official/comdex/x/lend/types"
-	// liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
+	"github.com/redactedfury/sxfury/x/lend/expected"
+	"github.com/redactedfury/sxfury/x/lend/types"
+	// liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
 )
 
 type (

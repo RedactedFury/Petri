@@ -1,10 +1,10 @@
 package v5_0_0 //nolint:revive,stylecheck
 
 import (
-	lendkeeper "github.com/comdex-official/comdex/x/lend/keeper"
-	"github.com/comdex-official/comdex/x/lend/types"
-	liquidationkeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	vaultkeeper "github.com/comdex-official/comdex/x/vault/keeper"
+	lendkeeper "github.com/redactedfury/sxfury/x/lend/keeper"
+	"github.com/redactedfury/sxfury/x/lend/types"
+	liquidationkeeper "github.com/redactedfury/sxfury/x/liquidation/keeper"
+	vaultkeeper "github.com/redactedfury/sxfury/x/vault/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
@@ -36,9 +36,9 @@ func FuncMigrateLiquidatedBorrow(ctx sdk.Context, k lendkeeper.Keeper, liqK liqu
 			amountOut := sdk.NewCoin(assetOut.Denom, v.AmountOut)
 			var cpoolName string
 			if pair.AssetOutPoolID == 1 {
-				cpoolName = "CMDX-ATOM-CMST"
+				cpoolName = "PETRI-ATOM-FUST"
 			} else {
-				cpoolName = "OSMO-ATOM-CMST"
+				cpoolName = "OSMO-ATOM-FUST"
 			}
 
 			globalIndex, _ := sdk.NewDecFromStr("0.002")

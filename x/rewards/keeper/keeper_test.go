@@ -2,12 +2,12 @@ package keeper_test
 
 import (
 	"encoding/binary"
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	collectorKeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	rewardsKeeper "github.com/comdex-official/comdex/x/rewards/keeper"
-	rewardstypes "github.com/comdex-official/comdex/x/rewards/types"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
+	"github.com/redactedfury/sxfury/app/wasm/bindings"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	collectorKeeper "github.com/redactedfury/sxfury/x/collector/keeper"
+	rewardsKeeper "github.com/redactedfury/sxfury/x/rewards/keeper"
+	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
+	vaultKeeper "github.com/redactedfury/sxfury/x/vault/keeper"
 	"testing"
 
 	"github.com/stretchr/testify/suite"
@@ -15,10 +15,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	lockerKeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	lockerTypes "github.com/comdex-official/comdex/x/locker/types"
+	chain "github.com/redactedfury/sxfury/app"
+	assetKeeper "github.com/redactedfury/sxfury/x/asset/keeper"
+	lockerKeeper "github.com/redactedfury/sxfury/x/locker/keeper"
+	lockerTypes "github.com/redactedfury/sxfury/x/locker/types"
 )
 
 type KeeperTestSuite struct {

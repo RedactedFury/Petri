@@ -3,8 +3,8 @@ package collector
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/collector/keeper"
-	"github.com/comdex-official/comdex/x/collector/types"
+	"github.com/redactedfury/sxfury/x/collector/keeper"
+	"github.com/redactedfury/sxfury/x/collector/types"
 )
 
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, state *types.GenesisState) {

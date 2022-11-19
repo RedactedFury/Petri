@@ -10,11 +10,11 @@ APPS = [
 ASSETS = [
     # [name, denom, decimals, isOnChain, assetOraclePriceRequired, isCdpMintable]
     ["ATOM", "uatom", 1000000, 0, 1, 0],  # ID - 1
-    ["SXFU", "usxfu",1000000, 0, 1, 0],  # ID - 2
+    ["PETRI", "upetri",1000000, 0, 1, 0],  # ID - 2
     ["FUST", "ufust",1000000, 1, 1, 1],  # ID - 3
     ["OSMO", "uosmo",1000000, 0, 1, 0],  # ID - 4
     ["CATOM", "ucatom",1000000, 1, 0, 1],  # ID - 5
-    ["CSXFU", "uccmdx",1000000, 1, 0, 1],  # ID - 6
+    ["CPETRI", "ucpetri",1000000, 1, 0, 1],  # ID - 6
     ["CFUST", "ucfust",1000000, 1, 0, 1],  # ID - 7
     ["COSMO", "ucosmo",1000000, 1, 0, 1],  # ID - 8
     ["HARBOR", "uharbor",1000000, 1, 1, 0],  # ID - 9
@@ -69,7 +69,7 @@ ADD_ASSET_RATES = [
             "c_asset_id": "7",
             "title": "Add Asset Rates Stats FUST",
             "description": "adding asset rates stats for FUST",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -92,7 +92,7 @@ ADD_ASSET_RATES = [
             "c_asset_id": "5",
             "title": "Add Asset Rates Stats ATOM",
             "description": "adding asset rates stats ATOM",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -115,11 +115,11 @@ ADD_ASSET_RATES = [
             "c_asset_id": "8",
             "title": "Add Asset Rates Stats OSMO",
             "description": "adding asset rates stats OSMO",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "SXFU",
+        "PETRI",
         {
             "asset_id": "2",
             "u_optimal": "0.5",
@@ -136,24 +136,24 @@ ADD_ASSET_RATES = [
             "liquidation_bonus": "0.05",
             "reserve_factor": "0.2",
             "c_asset_id": "6",
-            "title": "Add Asset Rates Stats SXFU",
-            "description": "adding asset rates stats SXFU",
-            "deposit": "10000000usxfu",
+            "title": "Add Asset Rates Stats PETRI",
+            "description": "adding asset rates stats PETRI",
+            "deposit": "10000000uPETRI",
         },
     ],
 ]
 
 ADD_LEND_POOL = [
     {
-        "module_name": "sxfu",
+        "module_name": "PETRI",
         "asset_id": "1,2,3",
         "asset_transit_type": "3,1,2",
         "supply_cap": "5000000000000000000,1000000000000000000,5000000000000000000",
-        "c_pool_name": "SXFU-ATOM-FUST",
+        "c_pool_name": "PETRI-ATOM-FUST",
         "reserve_funds": "100000000",
         "title": "Add pool",
         "description": "adding pool",
-        "deposit": "10000000usxfu",
+        "deposit": "10000000uPETRI",
     },
     {
         "module_name": "osmo",
@@ -164,48 +164,48 @@ ADD_LEND_POOL = [
         "reserve_funds": "100000000",
         "title": "Add pool",
         "description": "adding pool",
-        "deposit": "10000000usxfu",
+        "deposit": "10000000uPETRI",
     },
 ]
 
 ADD_LEND_PAIR = [
     [
-        "SXFU-FUST",
+        "PETRI-FUST",
         {
             "asset_in": "2",
             "asset_out": "3",
             "is_inter_pool": "0",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair SXFU-FUST",
-            "description": "adding extended pairs for SXFU-FUST same pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair PETRI-FUST",
+            "description": "adding extended pairs for PETRI-FUST same pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "SXFU-ATOM",
+        "PETRI-ATOM",
         {
             "asset_in": "2",
             "asset_out": "1",
             "is_inter_pool": "0",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair SXFU-ATOM",
-            "description": "adding extended pairs SXFU-ATOM same pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair PETRI-ATOM",
+            "description": "adding extended pairs PETRI-ATOM same pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "ATOM-SXFU",
+        "ATOM-PETRI",
         {
             "asset_in": "1",
             "asset_out": "2",
             "is_inter_pool": "0",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair ATOM-SXFU",
-            "description": "adding extended pairs ATOM-SXFU same pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair ATOM-PETRI",
+            "description": "adding extended pairs ATOM-PETRI same pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -218,20 +218,20 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair ATOM-FUST",
             "description": "adding extended pairs ATOM-FUST same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "FUST-SXFU",
+        "FUST-PETRI",
         {
             "asset_in": "3",
             "asset_out": "2",
             "is_inter_pool": "0",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair FUST-SXFU",
-            "description": "adding extended pairs FUST-SXFU same pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair FUST-PETRI",
+            "description": "adding extended pairs FUST-PETRI same pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -244,7 +244,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair FUST-ATOM",
             "description": "adding extended pairs FUST-ATOM same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -257,7 +257,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair OSMO-FUST",
             "description": "adding extended pairs OSMO-FUST same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -270,7 +270,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair OSMO-ATOM",
             "description": "adding extended pairs OSMO-ATOM same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -283,7 +283,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair ATOM-OSMO",
             "description": "adding extended pairs ATOM-OSMO same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -296,7 +296,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair ATOM-FUST",
             "description": "adding extended pairs ATOM-FUST same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -309,7 +309,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair FUST-OSMO",
             "description": "adding extended pairs FUST-OSMO same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -322,20 +322,20 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair FUST-ATOM",
             "description": "adding extended pairs FUST-ATOM same pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "SXFU-OSMO",
+        "PETRI-OSMO",
         {
             "asset_in": "2",
             "asset_out": "4",
             "is_inter_pool": "1",
             "asset_out_pool_id": "2",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair SXFU-OSMO",
-            "description": "adding extended pairs SXFU-OSMO cross pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair PETRI-OSMO",
+            "description": "adding extended pairs PETRI-OSMO cross pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -348,7 +348,7 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair FUST-OSMO",
             "description": "adding extended pairs FUST-OSMO cross pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
@@ -361,46 +361,46 @@ ADD_LEND_PAIR = [
             "min_usd_value_left": "100000000000",
             "title": "Add Extended pair ATOM-OSMO",
             "description": "adding extended pairs ATOM-OSMO cross pool",
-            "deposit": "10000000usxfu",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "OSMO-SXFU",
+        "OSMO-PETRI",
         {
             "asset_in": "4",
             "asset_out": "2",
             "is_inter_pool": "1",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair OSMO-SXFU",
-            "description": "adding extended pairs OSMO-SXFU cross pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair OSMO-PETRI",
+            "description": "adding extended pairs OSMO-PETRI cross pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "FUST-SXFU",
+        "FUST-PETRI",
         {
             "asset_in": "3",
             "asset_out": "2",
             "is_inter_pool": "1",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair FUST-SXFU",
-            "description": "adding extended pairs FUST-SXFU cross pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair FUST-PETRI",
+            "description": "adding extended pairs FUST-PETRI cross pool",
+            "deposit": "10000000uPETRI",
         },
     ],
     [
-        "ATOM-SXFU",
+        "ATOM-PETRI",
         {
             "asset_in": "1",
             "asset_out": "2",
             "is_inter_pool": "1",
             "asset_out_pool_id": "1",
             "min_usd_value_left": "100000000000",
-            "title": "Add Extended pair ATOM-SXFU",
-            "description": "adding extended pairs ATOM-SXFU cross pool",
-            "deposit": "10000000usxfu",
+            "title": "Add Extended pair ATOM-PETRI",
+            "description": "adding extended pairs ATOM-PETRI cross pool",
+            "deposit": "10000000uPETRI",
         },
     ],
 ]
@@ -419,7 +419,7 @@ WASM_CONTRACTS = [
     {
         "name": "Vesting Contract",
         "contractAddressKey": "vesting_contract",
-        "contractLink": "https://github.com/redactedfury/sxFury/sxFury/test-wasm-artifacts/raw/main/token_vesting.wasm",
+        "contractLink": "https://github.com/redactedfury/sxFury/test-wasm-artifacts/raw/main/token_vesting.wasm",
         "contractPath": f"./token_vesting.wasm",
         "initator": {},
         "formatKeys": []
@@ -434,7 +434,7 @@ WASM_CONTRACTS = [
             "t2": {"period": 1000, "weight": "0.50"},
             "voting_period": 122500,
             "vesting_contract": "",
-            "foundation_addr": ["comdex1rljg3wwgv6qezu3p05vxny9pwk3mdwl0ja407z"],
+            "foundation_addr": ["petri1rljg3wwgv6qezu3p05vxny9pwk3mdwl0ja407z"],
             "foundation_percentage": "0.2",
             "surplus_asset_id": 3,
             "emission": {
@@ -445,7 +445,7 @@ WASM_CONTRACTS = [
                 "distributed_rewards": "0",
             },
             "min_lock_amount" : "4",
-            "admin":"comdex1663kc7kwlqxg5s35wuq4nleuqvy5j2tstlkeg2"
+            "admin":"petri1663kc7kwlqxg5s35wuq4nleuqvy5j2tstlkeg2"
         },
         "formatKeys": ['vesting_contract']
     },
@@ -477,8 +477,8 @@ WASM_PROPOSALS = [
         "content": {
             "propose": {
                 "propose": {
-                    "title": "New proposal for add vault pair for SXFU C - FUST",
-                    "description": "This is a base execution proposal to add SXFU C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
+                    "title": "New proposal for add vault pair for PETRI C - FUST",
+                    "description": "This is a base execution proposal to add PETRI C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
                     "msgs": [
                         {
                             "msg_add_extended_pairs_vault": {
@@ -652,8 +652,8 @@ WASM_PROPOSALS = [
         "content": {
             "propose": {
                 "propose": {
-                    "title": "New proposal for add pair for SXFU",
-                    "description": "This is an base proposal execution proposal to add SXFU-FUST n.",
+                    "title": "New proposal for add pair for PETRI",
+                    "description": "This is an base proposal execution proposal to add PETRI-FUST n.",
                     "msgs": [{"msg_whitelist_app_id_liquidation": {"app_id": 1}}],
                     "app_id_param": 1,
                 }
@@ -692,8 +692,8 @@ WASM_PROPOSALS = [
         "content": {
             "propose": {
                 "propose": {
-                    "title": "New proposal for add vault pair for SXFU C - FUST",
-                    "description": "This is a base execution proposal to add SXFU C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
+                    "title": "New proposal for add vault pair for PETRI C - FUST",
+                    "description": "This is a base execution proposal to add PETRI C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
                     "msgs": [
                         {
                             "msg_add_extended_pairs_vault": {
@@ -708,7 +708,7 @@ WASM_PROPOSALS = [
                                 "debt_floor": "100000000",
                                 "is_stable_mint_vault": False,
                                 "min_cr": "1.7",
-                                "pair_name": "SXFU-A",
+                                "pair_name": "PETRI-A",
                                 "asset_out_oracle_price": False,
                                 "asset_out_price": 1000000,
                                 "min_usd_value_left": 100000,
@@ -727,8 +727,8 @@ WASM_PROPOSALS = [
         "content": {
             "propose": {
                 "propose": {
-                    "title": "New proposal for add vault pair for SXFU C - FUST",
-                    "description": "This is a base execution proposal to add SXFU C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
+                    "title": "New proposal for add vault pair for PETRI C - FUST",
+                    "description": "This is a base execution proposal to add PETRI C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
                     "msgs": [
                         {
                             "msg_add_extended_pairs_vault": {
@@ -762,8 +762,8 @@ WASM_PROPOSALS = [
         "content": {
             "propose": {
                 "propose": {
-                    "title": "New proposal for add vault pair for SXFU C - FUST",
-                    "description": "This is a base execution proposal to add SXFU C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
+                    "title": "New proposal for add vault pair for PETRI C - FUST",
+                    "description": "This is a base execution proposal to add PETRI C - FUST vault pair with given Vault properties a. Liquidation ratio : 140 % b. Stability Fee : 1%  c. Liquidation Penalty : 12% d. DrawDown Fee : 1% e. Debt Cieling : 100000000 FUST f. Debt Floor : 100 FUST ",
                     "msgs": [
                         {
                             "msg_add_extended_pairs_vault": {

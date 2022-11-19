@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/comdex-official/comdex/x/rewards/types"
+	"github.com/redactedfury/sxfury/x/rewards/types"
 )
 
 // GetParams returns the parameters for the liquidity module.

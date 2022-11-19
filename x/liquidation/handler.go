@@ -4,8 +4,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	"github.com/comdex-official/comdex/x/liquidation/keeper"
-	"github.com/comdex-official/comdex/x/liquidation/types"
+	"github.com/redactedfury/sxfury/x/liquidation/keeper"
+	"github.com/redactedfury/sxfury/x/liquidation/types"
 )
 
 // NewHandler ...

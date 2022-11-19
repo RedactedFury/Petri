@@ -9,11 +9,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	assetKeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	auctionKeeper "github.com/comdex-official/comdex/x/auction/keeper"
-	collectorKeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	collectorTypes "github.com/comdex-official/comdex/x/collector/types"
+	chain "github.com/redactedfury/sxfury/app"
+	assetKeeper "github.com/redactedfury/sxfury/x/asset/keeper"
+	auctionKeeper "github.com/redactedfury/sxfury/x/auction/keeper"
+	collectorKeeper "github.com/redactedfury/sxfury/x/collector/keeper"
+	collectorTypes "github.com/redactedfury/sxfury/x/collector/types"
 )
 
 type KeeperTestSuite struct {

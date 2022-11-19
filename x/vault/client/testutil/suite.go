@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	chain "github.com/comdex-official/comdex/app"
-	"github.com/comdex-official/comdex/x/vault/client/cli"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
-	"github.com/comdex-official/comdex/x/vault/types"
+	chain "github.com/redactedfury/sxfury/app"
+	"github.com/redactedfury/sxfury/x/vault/client/cli"
+	vaultKeeper "github.com/redactedfury/sxfury/x/vault/keeper"
+	"github.com/redactedfury/sxfury/x/vault/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	servertypes "github.com/cosmos/cosmos-sdk/server/types"
@@ -85,7 +85,7 @@ func (s *VaultIntegrationTestSuite) Create() {
 	assetInID := s.CreateNewAsset("ASSETONE", "denom1", 2000000)
 	assetOutID := s.CreateNewAsset("ASSETTWO", "denom2", 1000000)
 	pairID := s.CreateNewPair(assetInID, assetOutID)
-	extendedVaultPairID := s.CreateNewExtendedVaultPair("CMDX-C", appID, pairID)
+	extendedVaultPairID := s.CreateNewExtendedVaultPair("PETRI-C", appID, pairID)
 
 	_, _ = MsgCreate(s.val.ClientCtx, appID, extendedVaultPairID, sdk.NewInt(3), sdk.NewInt(2), s.val.Address.String())
 	// s.Require().NoError(err)

@@ -7,8 +7,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/comdex-official/comdex/x/tokenmint/expected"
-	"github.com/comdex-official/comdex/x/tokenmint/types"
+	"github.com/redactedfury/sxfury/x/tokenmint/expected"
+	"github.com/redactedfury/sxfury/x/tokenmint/types"
 )
 
 type Keeper struct {

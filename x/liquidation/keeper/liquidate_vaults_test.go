@@ -1,12 +1,12 @@
 package keeper_test
 
 import (
-	"github.com/comdex-official/comdex/app/wasm/bindings"
-	assetTypes "github.com/comdex-official/comdex/x/asset/types"
-	liquidationTypes "github.com/comdex-official/comdex/x/liquidation/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	vaultKeeper1 "github.com/comdex-official/comdex/x/vault/keeper"
-	vaultTypes "github.com/comdex-official/comdex/x/vault/types"
+	"github.com/redactedfury/sxfury/app/wasm/bindings"
+	assetTypes "github.com/redactedfury/sxfury/x/asset/types"
+	liquidationTypes "github.com/redactedfury/sxfury/x/liquidation/types"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
+	vaultKeeper1 "github.com/redactedfury/sxfury/x/vault/keeper"
+	vaultTypes "github.com/redactedfury/sxfury/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
@@ -21,7 +21,7 @@ func (s *KeeperTestSuite) AddPairAndExtendedPairVault1() {
 		asset2            uint64
 	}{
 		{
-			"Add Pair , Extended Pair Vault : cmdx cmst",
+			"Add Pair , Extended Pair Vault : petri cmst",
 			assetTypes.Pair{
 				AssetIn:  1,
 				AssetOut: 2,
@@ -38,7 +38,7 @@ func (s *KeeperTestSuite) AddPairAndExtendedPairVault1() {
 				DebtFloor:           sdk.NewInt(1000000),
 				IsStableMintVault:   false,
 				MinCr:               sdk.MustNewDecFromStr("1.5"),
-				PairName:            "CMDX-B",
+				PairName:            "PETRI-B",
 				AssetOutOraclePrice: true,
 				AssetOutPrice:       1000000,
 				MinUsdValueLeft:     1000000,
@@ -187,8 +187,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 		{
 			"Add Asset 1",
 			assetTypes.Asset{
-				Name:          "CMDX",
-				Denom:         "ucmdx",
+				Name:          "PETRI",
+				Denom:         "upetri",
 				Decimals:      sdk.NewInt(1000000),
 				IsOnChain:     true,
 				IsCdpMintable: true,
@@ -197,8 +197,8 @@ func (s *KeeperTestSuite) AddAppAsset() {
 		{
 			"Add Asset 2",
 			assetTypes.Asset{
-				Name:          "CMST",
-				Denom:         "ucmst",
+				Name:          "FUST",
+				Denom:         "ufust",
 				Decimals:      sdk.NewInt(1000000),
 				IsOnChain:     true,
 				IsCdpMintable: true,

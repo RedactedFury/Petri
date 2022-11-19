@@ -8,7 +8,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	utils "github.com/comdex-official/comdex/types"
+	utils "github.com/redactedfury/sxfury/types"
 )
 
 // Copied from orderbook_test.go

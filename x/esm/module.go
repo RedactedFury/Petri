@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/comdex-official/comdex/x/esm/expected"
+	"github.com/redactedfury/sxfury/x/esm/expected"
 
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -19,9 +19,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 
-	"github.com/comdex-official/comdex/x/esm/client/cli"
-	"github.com/comdex-official/comdex/x/esm/keeper"
-	"github.com/comdex-official/comdex/x/esm/types"
+	"github.com/redactedfury/sxfury/x/esm/client/cli"
+	"github.com/redactedfury/sxfury/x/esm/keeper"
+	"github.com/redactedfury/sxfury/x/esm/types"
 )
 
 var (

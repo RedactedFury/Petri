@@ -4,14 +4,14 @@ import (
 	"encoding/binary"
 	"testing"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	chain "github.com/comdex-official/comdex/app"
-	"github.com/comdex-official/comdex/x/lend/keeper"
-	"github.com/comdex-official/comdex/x/lend/types"
+	chain "github.com/redactedfury/sxfury/app"
+	"github.com/redactedfury/sxfury/x/lend/keeper"
+	"github.com/redactedfury/sxfury/x/lend/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

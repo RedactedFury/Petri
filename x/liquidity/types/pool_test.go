@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/redactedfury/sxfury/x/liquidity/types"
 )
 
 func TestPoolReserveAddress(t *testing.T) {

@@ -5,13 +5,13 @@ import (
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
+	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
+	liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
 
-	utils "github.com/comdex-official/comdex/types"
+	utils "github.com/redactedfury/sxfury/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
+	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
 )
 
 func (k Keeper) LendDutchActivator(ctx sdk.Context, lockedVault liquidationtypes.LockedVault) error {
@@ -198,7 +198,7 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	outFlowTokenCurrentPrice := auction.OutflowTokenCurrentPrice.Ceil().TruncateInt()
 	inFlowTokenCurrentPrice := auction.InflowTokenCurrentPrice.Ceil().TruncateInt()
 
-	slice := bid.Amount // cmdx
+	slice := bid.Amount // petri
 
 	a := auction.InflowTokenTargetAmount.Amount
 	b := auction.InflowTokenCurrentAmount.Amount
@@ -217,7 +217,7 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	inFlowTokenCoin := sdk.NewCoin(auction.InflowTokenTargetAmount.Denom, inFlowTokenAmount)
 
 	// required target cmst to raise in usd * 10**-12
-	// here we are multiplying each ucmdx with uusd so cmdx tokens price will be calculated amount * 10**-12
+	// here we are multiplying each upetri with uusd so petri tokens price will be calculated amount * 10**-12
 
 	lockedVault, found := k.liquidation.GetLockedVault(ctx, appID, auction.LockedVaultId)
 	if !found {
@@ -234,7 +234,7 @@ func (k Keeper) PlaceLendDutchAuctionBid(ctx sdk.Context, appID, auctionMappingI
 	// here subtracting current amount and slice to get amount left in auction and also converting it to usd * 10**-12
 	outLeft := auction.OutflowTokenCurrentAmount.Amount.Mul(outFlowTokenCurrentPrice)
 	amountLeftInPUSD := outLeft.Sub(owe)
-	// convert amountLeft to uusd from pusd(10**-12) so we can compare dust and amountLeft in UUSD . this happens by converting ucmdx to cmdx
+	// convert amountLeft to uusd from pusd(10**-12) so we can compare dust and amountLeft in UUSD . this happens by converting upetri to petri
 
 	// check if bid in usd*10**-12 is greater than required target cmst in usd*10**-12
 	// if user wants to buy more than target cmst then user should be sold only required cmst amount

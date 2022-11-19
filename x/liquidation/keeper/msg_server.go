@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/comdex-official/comdex/x/liquidation/types"
-	rewardstypes "github.com/comdex-official/comdex/x/rewards/types"
-	vaultypes "github.com/comdex-official/comdex/x/vault/types"
+	"github.com/redactedfury/sxfury/x/liquidation/types"
+	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
+	vaultypes "github.com/redactedfury/sxfury/x/vault/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 

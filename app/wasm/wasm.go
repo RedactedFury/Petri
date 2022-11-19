@@ -4,17 +4,17 @@ import (
 	"github.com/CosmWasm/wasmd/x/wasm"
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
 
-	assetkeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	auctionKeeper "github.com/comdex-official/comdex/x/auction/keeper"
-	collectorKeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	esmKeeper "github.com/comdex-official/comdex/x/esm/keeper"
-	lendKeeper "github.com/comdex-official/comdex/x/lend/keeper"
-	liquidationKeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidityKeeper "github.com/comdex-official/comdex/x/liquidity/keeper"
-	lockerkeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	rewardsKeeper "github.com/comdex-official/comdex/x/rewards/keeper"
-	tokenMintkeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	vaultKeeper "github.com/comdex-official/comdex/x/vault/keeper"
+	assetkeeper "github.com/redactedfury/sxfury/x/asset/keeper"
+	auctionKeeper "github.com/redactedfury/sxfury/x/auction/keeper"
+	collectorKeeper "github.com/redactedfury/sxfury/x/collector/keeper"
+	esmKeeper "github.com/redactedfury/sxfury/x/esm/keeper"
+	lendKeeper "github.com/redactedfury/sxfury/x/lend/keeper"
+	liquidationKeeper "github.com/redactedfury/sxfury/x/liquidation/keeper"
+	liquidityKeeper "github.com/redactedfury/sxfury/x/liquidity/keeper"
+	lockerkeeper "github.com/redactedfury/sxfury/x/locker/keeper"
+	rewardsKeeper "github.com/redactedfury/sxfury/x/rewards/keeper"
+	tokenMintkeeper "github.com/redactedfury/sxfury/x/tokenmint/keeper"
+	vaultKeeper "github.com/redactedfury/sxfury/x/vault/keeper"
 )
 
 func RegisterCustomPlugins(
@@ -30,10 +30,10 @@ func RegisterCustomPlugins(
 	lend *lendKeeper.Keeper,
 	liquidity *liquidityKeeper.Keeper,
 ) []wasmkeeper.Option {
-	comdexQueryPlugin := NewQueryPlugin(asset, locker, tokenMint, rewards, collector, liquidation, esm, vault, lend, liquidity)
+	petriQueryPlugin := NewQueryPlugin(asset, locker, tokenMint, rewards, collector, liquidation, esm, vault, lend, liquidity)
 
 	appDataQueryPluginOpt := wasmkeeper.WithQueryPlugins(&wasmkeeper.QueryPlugins{
-		Custom: CustomQuerier(comdexQueryPlugin),
+		Custom: CustomQuerier(petriQueryPlugin),
 	})
 	messengerDecoratorOpt := wasmkeeper.WithMessageHandlerDecorator(
 		CustomMessageDecorator(*locker, *rewards, *asset, *collector, *liquidation, *auction, *tokenMint, *esm, *vault),

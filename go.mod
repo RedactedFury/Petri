@@ -1,4 +1,4 @@
-module github.com/comdex-official/comdex
+module github.com/redactedfury/sxfury
 
 go 1.18
 

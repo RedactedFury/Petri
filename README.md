@@ -15,7 +15,7 @@ Plug & play customizable Comdex modules to deliver bleeding edge dApps
 
 ## Docs
 
-Checkout the documents here [docs.comdex.one](https://docs.comdex.one).
+Checkout the documents here [docs.petri.one](https://docs.petri.one).
 
 Harbour protocol : [docs.harborprotocol.one](http://docs.harborprotocol.one).
 
@@ -33,10 +33,10 @@ Requires [Go 1.18+](https://golang.org/dl/)
 ### Linux
 
 ```shell
-mkdir -p ${GOPATH}/src/github.com/comdex-official/ && \
-cd ${GOPATH}/src/github.com/comdex-official/ && \
-git clone https://github.com/comdex-official/comdex.git && \
-cd ${GOPATH}/src/github.com/comdex-official/comdex/ && \
+mkdir -p ${GOPATH}/src/github.com/petrichormoney/ && \
+cd ${GOPATH}/src/github.com/petrichormoney/ && \
+git clone https://github.com/redactedfury/sxfury.git && \
+cd ${GOPATH}/src/github.com/redactedfury/petri/ && \
 make install
 ```
 
@@ -48,7 +48,7 @@ To verify latest testnet and main net version check
 For further information on joining the testnet, head over to the
 [Comdex Networks TestNet](https://github.com/comdex-official/networks/tree/main/testnet).
 
-The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.comdex.one)
+The explorer for this chain is hosted [Meteor - TestNet Explorer](https://meteor-explorer.petri.one)
 
 ## Main Net
 For further information on joining the mainnet, head over to the
@@ -58,27 +58,27 @@ For further information on joining the mainnet, head over to the
 ## Main Net Explorers
 The explorer for this chain is hosted
 
-* [Mintscan](https://www.mintscan.io/comdex/)
-* [Aneka - Vitwit](https://comdex.aneka.io/)
-* [Look.Chill](https://look.chillvalidation.com/comdex)
-* [Atomscan](https://atomscan.com/comdex)
+* [Mintscan](https://www.mintscan.io/petri/)
+* [Aneka - Vitwit](https://petri.aneka.io/)
+* [Look.Chill](https://look.chillvalidation.com/petri)
+* [Atomscan](https://atomscan.com/petri)
 * [ZenChainLabs](https://comdex.zenscan.io/)
 
-## want to contribute to comdex, please go through the contribution guides
+## want to contribute to petri, please go through the contribution guides
 * [Contribution guides](https://github.com/comdex-official/contribution-docs)
 
 ## License
 
 Copyright © Comdex Technologies Pte Ltd. All rights reserved.
 
-Licensed under the [comdex license](LICENSE).
+Licensed under the [petri license](LICENSE).
 
 [![Project Status: Active -- The project has reached a stable, usable
 state and is being actively developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
-[![version](https://img.shields.io/github/tag/comdex-official/comdex.svg)](https://github.com/comdex-official/comdex/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/comdex-official/comdex)](https://goreportcard.com/report/github.com/comdex-official/comdex)
-[![API Reference](https://godoc.org/github.com/comdex-official/comdex?status.svg)](https://godoc.org/github.com/comdex-official/comdex)
-[![GitHub](https://img.shields.io/github/license/comdex-official/comdex.svg)](https://github.com/comdex-official/comdex/blob/development/LICENSE)
-[![Lines Of Code](https://img.shields.io/tokei/lines/github/comdex-official/comdex?style=flat-square)](https://github.com/comdex-official/comdex)
+[![version](https://img.shields.io/github/tag/petri-official/petri.svg)](https://github.com/redactedfury/sxfury/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/redactedfury/sxfury)](https://goreportcard.com/report/github.com/redactedfury/sxfury)
+[![API Reference](https://godoc.org/github.com/redactedfury/sxfury?status.svg)](https://godoc.org/github.com/redactedfury/sxfury)
+[![GitHub](https://img.shields.io/github/license/petri-official/petri.svg)](https://github.com/redactedfury/sxfury/blob/development/LICENSE)
+[![Lines Of Code](https://img.shields.io/tokei/lines/github/petri-official/petri?style=flat-square)](https://github.com/redactedfury/sxfury)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ComdexOfficial?label=Follow&style=social)](https://twitter.com/ComdexOfficial)
 [![Discord Chat](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.com/invite/7vjPvWKKMT)

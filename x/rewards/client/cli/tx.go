@@ -14,7 +14,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/spf13/cobra"
 
-	"github.com/comdex-official/comdex/x/rewards/types"
+	"github.com/redactedfury/sxfury/x/rewards/types"
 )
 
 // GetTxCmd returns the transaction commands for this module .

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/comdex-official/comdex/x/market/expected"
+	"github.com/redactedfury/sxfury/x/market/expected"
 
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -20,9 +20,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	porttypes "github.com/cosmos/ibc-go/v3/modules/core/05-port/types"
 
-	"github.com/comdex-official/comdex/x/bandoracle/client/cli"
-	"github.com/comdex-official/comdex/x/bandoracle/keeper"
-	"github.com/comdex-official/comdex/x/bandoracle/types"
+	"github.com/redactedfury/sxfury/x/bandoracle/client/cli"
+	"github.com/redactedfury/sxfury/x/bandoracle/keeper"
+	"github.com/redactedfury/sxfury/x/bandoracle/types"
 )
 
 var (

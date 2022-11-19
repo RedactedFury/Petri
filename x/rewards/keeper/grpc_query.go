@@ -10,7 +10,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/comdex-official/comdex/x/rewards/types"
+	"github.com/redactedfury/sxfury/x/rewards/types"
 )
 
 var _ types.QueryServer = &Keeper{}

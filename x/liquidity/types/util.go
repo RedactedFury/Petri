@@ -6,8 +6,8 @@ import (
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	"github.com/tendermint/tendermint/crypto"
 
-	"github.com/comdex-official/comdex/x/liquidity/amm"
-	"github.com/comdex-official/comdex/x/liquidity/expected"
+	"github.com/redactedfury/sxfury/x/liquidity/amm"
+	"github.com/redactedfury/sxfury/x/liquidity/expected"
 )
 
 // BulkSendCoinsOperation holds a list of SendCoins operations for bulk execution.

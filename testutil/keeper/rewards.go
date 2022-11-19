@@ -4,8 +4,8 @@ package keeper
 //import (
 //	"testing"
 //
-//	"github.com/comdex-official/comdex/x/rewards/keeper"
-//	"github.com/comdex-official/comdex/x/rewards/types"
+//	"github.com/redactedfury/sxfury/x/rewards/keeper"
+//	"github.com/redactedfury/sxfury/x/rewards/types"
 //	"github.com/cosmos/cosmos-sdk/codec"
 //	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 //	"github.com/cosmos/cosmos-sdk/store"

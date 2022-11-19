@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
 
-	"github.com/comdex-official/comdex/x/market/types"
+	"github.com/redactedfury/sxfury/x/market/types"
 )
 
 func queryMarket() *cobra.Command {

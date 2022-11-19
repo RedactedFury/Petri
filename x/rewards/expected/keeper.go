@@ -1,19 +1,19 @@
 package expected
 
 import (
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	"github.com/comdex-official/comdex/x/liquidity/amm"
+	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
+	"github.com/redactedfury/sxfury/x/liquidity/amm"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	collectortypes "github.com/comdex-official/comdex/x/collector/types"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
-	liquiditytypes "github.com/comdex-official/comdex/x/liquidity/types"
-	lockertypes "github.com/comdex-official/comdex/x/locker/types"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
-	"github.com/comdex-official/comdex/x/rewards/types"
-	vaulttypes "github.com/comdex-official/comdex/x/vault/types"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	collectortypes "github.com/redactedfury/sxfury/x/collector/types"
+	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
+	liquiditytypes "github.com/redactedfury/sxfury/x/liquidity/types"
+	lockertypes "github.com/redactedfury/sxfury/x/locker/types"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
+	"github.com/redactedfury/sxfury/x/rewards/types"
+	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
 )
 
 // AccountKeeper defines the expected account keeper used for simulations (noalias).

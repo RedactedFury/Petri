@@ -97,9 +97,9 @@ import (
 	ibchost "github.com/cosmos/ibc-go/v3/modules/core/24-host"
 	ibckeeper "github.com/cosmos/ibc-go/v3/modules/core/keeper"
 
-	"github.com/comdex-official/comdex/x/liquidation"
-	liquidationkeeper "github.com/comdex-official/comdex/x/liquidation/keeper"
-	liquidationtypes "github.com/comdex-official/comdex/x/liquidation/types"
+	"github.com/redactedfury/sxfury/x/liquidation"
+	liquidationkeeper "github.com/redactedfury/sxfury/x/liquidation/keeper"
+	liquidationtypes "github.com/redactedfury/sxfury/x/liquidation/types"
 
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmjson "github.com/tendermint/tendermint/libs/json"
@@ -108,48 +108,48 @@ import (
 	tmprototypes "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/comdex-official/comdex/x/asset"
-	assetclient "github.com/comdex-official/comdex/x/asset/client"
-	assetkeeper "github.com/comdex-official/comdex/x/asset/keeper"
-	assettypes "github.com/comdex-official/comdex/x/asset/types"
-	"github.com/comdex-official/comdex/x/auction"
-	auctionkeeper "github.com/comdex-official/comdex/x/auction/keeper"
-	auctiontypes "github.com/comdex-official/comdex/x/auction/types"
-	"github.com/comdex-official/comdex/x/collector"
-	collectorkeeper "github.com/comdex-official/comdex/x/collector/keeper"
-	collectortypes "github.com/comdex-official/comdex/x/collector/types"
-	"github.com/comdex-official/comdex/x/esm"
-	esmkeeper "github.com/comdex-official/comdex/x/esm/keeper"
-	esmtypes "github.com/comdex-official/comdex/x/esm/types"
+	"github.com/redactedfury/sxfury/x/asset"
+	assetclient "github.com/redactedfury/sxfury/x/asset/client"
+	assetkeeper "github.com/redactedfury/sxfury/x/asset/keeper"
+	assettypes "github.com/redactedfury/sxfury/x/asset/types"
+	"github.com/redactedfury/sxfury/x/auction"
+	auctionkeeper "github.com/redactedfury/sxfury/x/auction/keeper"
+	auctiontypes "github.com/redactedfury/sxfury/x/auction/types"
+	"github.com/redactedfury/sxfury/x/collector"
+	collectorkeeper "github.com/redactedfury/sxfury/x/collector/keeper"
+	collectortypes "github.com/redactedfury/sxfury/x/collector/types"
+	"github.com/redactedfury/sxfury/x/esm"
+	esmkeeper "github.com/redactedfury/sxfury/x/esm/keeper"
+	esmtypes "github.com/redactedfury/sxfury/x/esm/types"
 
-	"github.com/comdex-official/comdex/x/lend"
-	lendclient "github.com/comdex-official/comdex/x/lend/client"
-	lendkeeper "github.com/comdex-official/comdex/x/lend/keeper"
-	lendtypes "github.com/comdex-official/comdex/x/lend/types"
-	"github.com/comdex-official/comdex/x/locker"
-	lockerkeeper "github.com/comdex-official/comdex/x/locker/keeper"
-	lockertypes "github.com/comdex-official/comdex/x/locker/types"
+	"github.com/redactedfury/sxfury/x/lend"
+	lendclient "github.com/redactedfury/sxfury/x/lend/client"
+	lendkeeper "github.com/redactedfury/sxfury/x/lend/keeper"
+	lendtypes "github.com/redactedfury/sxfury/x/lend/types"
+	"github.com/redactedfury/sxfury/x/locker"
+	lockerkeeper "github.com/redactedfury/sxfury/x/locker/keeper"
+	lockertypes "github.com/redactedfury/sxfury/x/locker/types"
 
-	bandoraclemodule "github.com/comdex-official/comdex/x/bandoracle"
-	bandoraclemoduleclient "github.com/comdex-official/comdex/x/bandoracle/client"
-	bandoraclemodulekeeper "github.com/comdex-official/comdex/x/bandoracle/keeper"
-	bandoraclemoduletypes "github.com/comdex-official/comdex/x/bandoracle/types"
+	bandoraclemodule "github.com/redactedfury/sxfury/x/bandoracle"
+	bandoraclemoduleclient "github.com/redactedfury/sxfury/x/bandoracle/client"
+	bandoraclemodulekeeper "github.com/redactedfury/sxfury/x/bandoracle/keeper"
+	bandoraclemoduletypes "github.com/redactedfury/sxfury/x/bandoracle/types"
 
-	"github.com/comdex-official/comdex/x/market"
-	marketkeeper "github.com/comdex-official/comdex/x/market/keeper"
-	markettypes "github.com/comdex-official/comdex/x/market/types"
+	"github.com/redactedfury/sxfury/x/market"
+	marketkeeper "github.com/redactedfury/sxfury/x/market/keeper"
+	markettypes "github.com/redactedfury/sxfury/x/market/types"
 
-	"github.com/comdex-official/comdex/x/rewards"
-	rewardskeeper "github.com/comdex-official/comdex/x/rewards/keeper"
-	rewardstypes "github.com/comdex-official/comdex/x/rewards/types"
+	"github.com/redactedfury/sxfury/x/rewards"
+	rewardskeeper "github.com/redactedfury/sxfury/x/rewards/keeper"
+	rewardstypes "github.com/redactedfury/sxfury/x/rewards/types"
 
-	"github.com/comdex-official/comdex/x/tokenmint"
-	tokenmintkeeper "github.com/comdex-official/comdex/x/tokenmint/keeper"
-	tokenminttypes "github.com/comdex-official/comdex/x/tokenmint/types"
+	"github.com/redactedfury/sxfury/x/tokenmint"
+	tokenmintkeeper "github.com/redactedfury/sxfury/x/tokenmint/keeper"
+	tokenminttypes "github.com/redactedfury/sxfury/x/tokenmint/types"
 
-	"github.com/comdex-official/comdex/x/vault"
-	vaultkeeper "github.com/comdex-official/comdex/x/vault/keeper"
-	vaulttypes "github.com/comdex-official/comdex/x/vault/types"
+	"github.com/redactedfury/sxfury/x/vault"
+	vaultkeeper "github.com/redactedfury/sxfury/x/vault/keeper"
+	vaulttypes "github.com/redactedfury/sxfury/x/vault/types"
 
 	"github.com/CosmWasm/wasmd/x/wasm"
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
@@ -158,24 +158,24 @@ import (
 	authzkeeper "github.com/cosmos/cosmos-sdk/x/authz/keeper"
 	authzmodule "github.com/cosmos/cosmos-sdk/x/authz/module"
 
-	"github.com/comdex-official/comdex/x/liquidity"
-	liquidityclient "github.com/comdex-official/comdex/x/liquidity/client"
-	liquiditykeeper "github.com/comdex-official/comdex/x/liquidity/keeper"
-	liquiditytypes "github.com/comdex-official/comdex/x/liquidity/types"
+	"github.com/redactedfury/sxfury/x/liquidity"
+	liquidityclient "github.com/redactedfury/sxfury/x/liquidity/client"
+	liquiditykeeper "github.com/redactedfury/sxfury/x/liquidity/keeper"
+	liquiditytypes "github.com/redactedfury/sxfury/x/liquidity/types"
 
-	cwasm "github.com/comdex-official/comdex/app/wasm"
+	cwasm "github.com/redactedfury/sxfury/app/wasm"
 
-	mv5 "github.com/comdex-official/comdex/app/upgrades/mainnet/v5"
-	tv1_0_0 "github.com/comdex-official/comdex/app/upgrades/testnet/v1_0_0"
-	tv2_0_0 "github.com/comdex-official/comdex/app/upgrades/testnet/v2_0_0"
-	tv3_0_0 "github.com/comdex-official/comdex/app/upgrades/testnet/v3_0_0"
-	tv4_0_0 "github.com/comdex-official/comdex/app/upgrades/testnet/v4_0_0"
-	tv5_0_0 "github.com/comdex-official/comdex/app/upgrades/testnet/v5_0_0"
+	mv5 "github.com/redactedfury/sxfury/app/upgrades/mainnet/v5"
+	tv1_0_0 "github.com/redactedfury/sxfury/app/upgrades/testnet/v1_0_0"
+	tv2_0_0 "github.com/redactedfury/sxfury/app/upgrades/testnet/v2_0_0"
+	tv3_0_0 "github.com/redactedfury/sxfury/app/upgrades/testnet/v3_0_0"
+	tv4_0_0 "github.com/redactedfury/sxfury/app/upgrades/testnet/v4_0_0"
+	tv5_0_0 "github.com/redactedfury/sxfury/app/upgrades/testnet/v5_0_0"
 )
 
 const (
-	AccountAddressPrefix = "comdex"
-	Name                 = "comdex"
+	AccountAddressPrefix = "petri"
+	Name                 = "petrichor"
 )
 
 // GetWasmEnabledProposals parses the WasmProposalsEnabled / EnableSpecificWasmProposals values to
@@ -735,7 +735,7 @@ func New(
 	if err != nil {
 		panic(fmt.Sprintf("error while reading wasm config: %s", err))
 	}
-	supportedFeatures := "iterator,staking,stargate,comdex"
+	supportedFeatures := "iterator,staking,stargate,petri"
 
 	wasmOpts = append(cwasm.RegisterCustomPlugins(&app.LockerKeeper, &app.TokenmintKeeper, &app.AssetKeeper, &app.Rewardskeeper, &app.CollectorKeeper, &app.LiquidationKeeper, &app.AuctionKeeper, &app.EsmKeeper, &app.VaultKeeper, &app.LendKeeper, &app.LiquidityKeeper), wasmOpts...)
 

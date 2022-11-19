@@ -63,8 +63,8 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 
 # process linker flags
 
-ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=comdex \
-		  -X github.com/cosmos/cosmos-sdk/version.AppName=comdex \
+ldflags = -X github.com/cosmos/cosmos-sdk/version.Name=petri \
+		  -X github.com/cosmos/cosmos-sdk/version.AppName=petri \
 		  -X github.com/cosmos/cosmos-sdk/version.Version=$(VERSION) \
 		  -X github.com/cosmos/cosmos-sdk/version.Commit=$(COMMIT) \
 		  -X "github.com/cosmos/cosmos-sdk/version.BuildTags=$(build_tags_comma_sep)" \
@@ -108,17 +108,17 @@ distclean: clean
 	rm -rf vendor/
 
 install: go.sum
-	go install -mod=readonly $(BUILD_FLAGS) ./cmd/comdex
+	go install -mod=readonly $(BUILD_FLAGS) ./cmd/petri
 
 build:
-	go build $(BUILD_FLAGS) -o bin/comdex ./cmd/comdex
+	go build $(BUILD_FLAGS) -o bin/petri ./cmd/petri
 
 release: install
 	mkdir -p release
 ifeq (${OS},Windows_NT)
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex.exe
+	tar -czvf release/petri-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) petri.exe
 else
-	tar -czvf release/comdex-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) comdex
+	tar -czvf release/petri-${GOOS}-${GOARCH}.tar.gz --directory=$(GOBIN) petri
 endif
 
 ###############################################################################
@@ -180,8 +180,8 @@ test-sim-nondeterminism:
 
 test-sim-custom-genesis-fast:
 	@echo "Running custom genesis simulation..."
-	@echo "By default, ${HOME}/.comdex/config/genesis.json will be used."
-	@go test -mod=readonly $(SIMAPP) -run TestFullAppSimulation -Genesis=${HOME}/.comdex/config/genesis.json \
+	@echo "By default, ${HOME}/.petri/config/genesis.json will be used."
+	@go test -mod=readonly $(SIMAPP) -run TestFullAppSimulation -Genesis=${HOME}/.petri/config/genesis.json \
 		-Enabled=true -NumBlocks=100 -BlockSize=200 -Commit=true -Seed=99 -Period=5 -v -timeout 24h
 
 test-sim-import-export: runsim
@@ -194,8 +194,8 @@ test-sim-after-import: runsim
 
 test-sim-custom-genesis-multi-seed: runsim
 	@echo "Running multi-seed custom genesis simulation..."
-	@echo "By default, ${HOME}/.comdex/config/genesis.json will be used."
-	@$(BINDIR)/runsim -Genesis=${HOME}/.comdex/config/genesis.json -SimAppPkg=$(SIMAPP) -ExitOnFail 400 5 TestFullAppSimulation
+	@echo "By default, ${HOME}/.petri/config/genesis.json will be used."
+	@$(BINDIR)/runsim -Genesis=${HOME}/.petri/config/genesis.json -SimAppPkg=$(SIMAPP) -ExitOnFail 400 5 TestFullAppSimulation
 
 test-sim-multi-seed-long: runsim
 	@echo "Running long multi-seed application simulation. This may take awhile!"

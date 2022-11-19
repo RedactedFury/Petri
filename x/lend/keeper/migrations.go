@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	v5types "github.com/comdex-official/comdex/x/lend/migrations/v5"
+	v5types "github.com/redactedfury/sxfury/x/lend/migrations/v5"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )
