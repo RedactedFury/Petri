@@ -1,6 +1,6 @@
-module github.com/redactedfury/petri
+go 1.19
 
-go 1.18
+module github.com/redactedfury/petri
 
 require (
 	github.com/CosmWasm/wasmd v0.28.0
