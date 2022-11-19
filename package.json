@@ -1,7 +1,7 @@
 {
   "name": "petri",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\">Comdex : Democratizing Finance </h1>",
+  "description": "<h1 align=\"center\">Petrichor : Democratizing Finance </h1>",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RedactedFury/sxFury.git"
+    "url": "git+https://github.com/RedactedFury/Petri.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RedactedFury/sxFury/issues"
+    "url": "https://github.com/RedactedFury/Petri/issues"
   },
-  "homepage": "https://github.com/RedactedFury/sxFury#readme",
+  "homepage": "https://github.com/RedactedFury/Petri#readme",
   "dependencies": {
     "node": "^19.1.0"
   }
